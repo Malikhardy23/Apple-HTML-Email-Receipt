@@ -27,18 +27,23 @@
           border-spacing: 0px;
       }
 
-		@media screen and (max-width: 599.98px) {
+      /* Media Queries */
 
-      }
-      @media screen and (max-width: 399.98px) {
+      /* Portrait */
+        @media only screen 
+        and (min-device-width: 375px) 
+        and (max-device-width: 667px) 
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: portrait) { 
 
-      }
+            center{
+                width: 600px!important;
+            }
 
-      /* Custom Dark Mode Colors */
-
-      @media (prefers-color-scheme: dark) {
-
-      }
+            body{
+                width: 600px!important;
+            }
+        }
    </style>
    
 	<!--[if (gte mso 9)|(IE)]>
